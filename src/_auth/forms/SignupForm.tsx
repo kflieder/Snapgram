@@ -25,7 +25,7 @@ const SignupForm = () => {
 
   const { mutateAsync: createUserAccount, isPending: isCreatingAccount } = useCreateUserAccount();
 
-  const { mutateAsync: signInAccount, isLoading: isSigningIn } = useSignInAccount();
+  const { mutateAsync: signInAccount, isPending: isSigningIn } = useSignInAccount();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext()
   const navigate = useNavigate();
 
@@ -63,6 +63,7 @@ const SignupForm = () => {
       const isLoggedIn = await checkAuthUser();
 
       if(isLoggedIn) {
+        form.reset();
         navigate('/');
       } else {
         return toast({ title: "Sign In failed. Please try again."})
