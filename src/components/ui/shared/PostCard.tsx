@@ -5,7 +5,7 @@ type PostCardProps = {
     post: Models.Document;
 }
 
-const PostCard = ({ post }: PostCardProps) => {
+const PostCard = ({ }: PostCardProps) => {
   return (
     <div className="post-card">
         <div className="flex-between">

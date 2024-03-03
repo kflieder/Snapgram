@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+const Saved = () => {
+    return (_jsxs("div", { className: "explore-container", children: [_jsx("div", { className: "explore-inner_container" }), _jsx("div", { className: "flex-between w-full max-w-5xl mt-16 mb-7", children: _jsx("div", { className: "flex-center gap-3 bg-dark-3 rounded-xl px-4 py-2 cursor-pointer", children: _jsx("h2", { className: "h3-bold md:h2-bold w-full", children: "Saved" }) }) }), _jsx("div", { className: "flex flex-wrap gap-9 w-full max-w-5xl", children: _jsx("ul", { className: "grid-container", children: _jsxs("li", { className: "relative min-w-80 h-80", children: [_jsx("div", { className: "grid-post_link", children: _jsx("img", { src: "/assets/images/selfie.jpeg", alt: "selfie", className: "h-full w-full object-cover" }) }), _jsxs("div", { className: "grid-post_user", children: [_jsx("img", { src: "/icons/profile-placeholder.svg", alt: "profile", className: "h-8 w-8 rounded-full" }), _jsx("p", { className: "line-clamp-1", children: "Kflieder" })] })] }) }) })] }));
+};
+export default Saved;
